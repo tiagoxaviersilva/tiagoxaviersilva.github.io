@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: #f5f5f3;
+}
+
+.hero-content {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 1;
+    margin-bottom: 25px;
+    letter-spacing: -4px;
+}
+
+.hero h2 {
+    font-size: clamp(22px, 3vw, 36px);
+    font-weight: 500;
+    max-width: 800px;
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+.intro {
+    font-size: 18px;
+    max-width: 650px;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #1a1a1a;
+    transition: 0.2s ease;
+}
+
+.button.primary {
+    background: #1a1a1a;
+    color: white;
+}
+
+.button.secondary {
+    color: #1a1a1a;
+    background: transparent;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+.section h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.1;
+    margin-bottom: 30px;
+    letter-spacing: -2px;
+}
+
+.section-text {
+    max-width: 750px;
+    font-size: 19px;
+    color: #555;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-section {
+    background: #fafafa;
+}
+
+.project-card {
+    margin-top: 50px;
+    padding: 40px;
+    background: white;
+    border: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 30px;
+}
+
+.project-number {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.project-category {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.project-content h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    max-width: 750px;
+    color: #555;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #1a1a1a;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    padding: 35px 0;
+    border-top: 1px solid #ddd;
+}
+
+.experience-item h3 {
+    font-size: 25px;
+}
+
+.company {
+    color: #666;
+}
+
+.experience-description {
+    color: #555;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 800px;
+}
+
+.skills span {
+    border: 1px solid #ccc;
+    padding: 9px 15px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 100px 0 40px;
+    background: #1a1a1a;
+    color: white;
+}
+
+.footer h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 80px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #aaa;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .experience-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
